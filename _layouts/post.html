@@ -1,0 +1,14 @@
+---
+layout: default
+---
+
+<h1>{{ page.title }}</h1>
+
+<p>
+  Pubblicato il
+  <time datetime='{{ page.date | date: "%Y-%m-%d" }}'>
+    {{ page.date | date: "%d/%m/%Y" }}
+  </time>
+</p>
+
+{{ content }}
