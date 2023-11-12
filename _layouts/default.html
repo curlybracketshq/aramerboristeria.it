@@ -10,13 +10,37 @@
 </head>
 
 <body>
-  <header></header>
+  <div class="container">
+    <header></header>
 
-  {{ content }}
+    {{ content }}
 
-  <footer>
-    <p>&copy; {{ site.time | date: '%Y' }} Aram Erboristeria</p>
-  </footer>
+    <footer>
+      <div class="left">
+        <p>
+          <a href="mailto:info@aramerboristeria.it">info@aramerboristeria.it</a>
+          <span class="spacer"></span>
+          <a href="tel://+393409444792">+39 340 944 4792</a>
+          <span class="spacer"></span>
+          <a class="social_icon" href="https://www.instagram.com/aramerboristeria">
+            <img src="/images/instagram.svg" alt="Visita Aram Erboristeria su Instagram" />
+          </a>
+          <span class="spacer"></span>
+          <a class="social_icon" href="https://www.facebook.com/aramerboristeria">
+            <img src="/images/facebook.svg" alt="Visita Aram Erboristeria su Facebook" />
+          </a>
+          <span class="spacer"></span>
+          <a class="social_icon" href="https://twitter.com/aramerbe">
+            <img src="/images/twitter.svg" alt="Visita Aram Erboristeria su Twitter" />
+          </a>
+          <span class="spacer"></span>
+          <a href="https://dietista.it/">dietista.it</a>
+        </p>
+      </div>
+      <div class="right">
+        <p>&copy; {{ site.time | date: '%Y' }} Aram Erboristeria</p>
+      </div>
+    </footer>
   </div>
 </body>
 
